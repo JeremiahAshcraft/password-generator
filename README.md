@@ -1,0 +1,1 @@
+This is a project from Scrimba's Bootcamp course. Given a design template from figma and requirements for app functionality, I built the app from scratch. 
