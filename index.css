@@ -1,0 +1,183 @@
+/* Global Selectors */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    background-color: #1F2937;
+    color: #fff;
+    height: 100%;
+    user-select: none;
+}
+
+.pw-gen-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+    caret-color: transparent;
+}
+
+/* Header */
+
+.header-pw-gen {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 11.5em;
+    line-height: 90%;
+    margin: 0;
+}
+
+.header-span {
+    color: #4ADF86;
+}
+
+.header-paragraph {
+    font-size: 6.25em;
+    font-weight: 200;
+    margin-top: 0;
+    transform: scaleY(.8);
+    padding-top: .5em;
+}
+
+/* Generate passwords button */
+
+.generator-container {
+    font-size: 4em;
+}
+
+.btn-pw-gen {
+    background-color: #10B981;
+    color: #fff;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.btn-pw-gen:hover {
+    background-color: #55F991;
+}
+
+.btn-pw-gen:focus {
+    background-color: #4ADF99;
+}
+
+.btn-pw-gen:active {
+    background-color: #4ADF86;
+}
+
+/* Inputs that display passwords */
+
+.pw-input-container {
+    border-top: 2px solid #2F3E53;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.pw-input {
+    background-color: #2F3E53;
+    color: #55F991;
+    border: none;
+    border-radius: 10px;
+    height: 2em;
+    text-align: center;
+}
+
+.input-one {
+    margin-right: .65em;
+}
+
+.input-two {
+    margin-left: .65em;
+}
+
+/* Copy password buttons  */
+
+.btn-copy-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-pw-copy {
+    background-color: #10B981;
+    color: #fff;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1em;
+    width: 47.5%;
+}
+
+.btn-pw-copy:hover {
+    background-color: #55F991;
+}
+
+.btn-pw-copy:active {
+    background-color: #4ADF86;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .header-pw-gen {
+        font-size: 7.5em;
+    }
+
+    .header-paragraph {
+        font-size: 4em;
+    }
+
+    .generator-container {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+
+    .pw-gen-container {
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .header-pw-gen {
+        font-size: 3.5em;
+    }
+
+    .header-paragraph {
+        font-size: 1.7em;
+        font-weight: 400;
+        transform: scaleY(1);
+    }
+
+    .generator-container {
+        font-size: 2.5em;
+    }
+
+    .btn-pw-gen {
+        margin-top: 1.3em;
+    }
+
+    .pw-input-container {
+        flex-direction: column;
+    }
+
+    .pw-input {
+        margin: 0;
+    }
+
+    .input-two {
+        margin-top: 10px;
+    }
+}
